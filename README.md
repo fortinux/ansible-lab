@@ -6,7 +6,7 @@
   
 `docker compose up -d`
 
-- To connect Ansible`s container:
+- Connect to Ansible container:
 ```
 docker exec -it ansible_lab /bin/bash
 ```
