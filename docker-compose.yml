@@ -1,0 +1,18 @@
+version: '1.0.0'
+services:
+  ansible:
+    container_name: ansible_lab
+    build: ./Docker/Ansible_Control_node
+    tty: true
+    working_dir: "/var/data"
+    volumes:
+      - .:/var/data
+
+  server01:
+    container_name: server01
+    build: ./Docker/Target_Server
+    tty: true
+  server02:
+    container_name: server02
+    build: ./Docker/Target_Server
+    tty: true

@@ -1,0 +1,5 @@
+- hosts: target
+  tasks:
+  - name: "Crear fichero hola_mundo.txt"
+    shell: |
+        touch hola_mundo.txt
