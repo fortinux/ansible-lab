@@ -3,6 +3,9 @@ FROM rockylinux:8
 
 # Install OpenSSh server and vim
 RUN dnf -y install openssh-server openssh-clients vim
+RUN dnf module -y install python39
+# Uncomment this line if you need devel tools
+# RUN dnf -y groupinstall development
 
 # Created public key. It's required when starting sshd
 RUN ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
