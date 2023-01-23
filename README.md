@@ -38,7 +38,7 @@ ansible-playbook -i hosts playbook. yml
 
 ### Instrucciones:
 ```
-docker-compose up -d
+docker compose up -d
 ```
 - Conectarse al contenedor Ansible:
 ```
